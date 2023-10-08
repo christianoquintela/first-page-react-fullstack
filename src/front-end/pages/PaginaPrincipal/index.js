@@ -1,16 +1,21 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
+import api from "../../service/";
 import ModelPage from "../ModelPage/index";
 
 function PaginaPrincipal() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    api.get().then((response) => {
+      setData(response.data);
+      console.log(response);
+    });
+  }, []);
   return (
     <div>
       <ModelPage>
-        <h1>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde commodi
-          assumenda, vitae fuga repellat itaque at nam neque deleniti officiis
-          earum obcaecati dolor, aut amet delectus.
-        </h1>
+        <h1>aloha!</h1>
+        <h2>{data.msg}</h2>
       </ModelPage>
     </div>
   );
