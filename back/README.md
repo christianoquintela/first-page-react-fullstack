@@ -2,25 +2,23 @@
 
 fs = file sistem
 
-            _
-
-|front-end| _|
-|back-end | _| Divisão Física
-|dados | \_|
+|front-end| |
+|back-end | | Divisão Física
+|dados | |
 
 ## 2
 
-| --------------------------- |
-|front-end| |
-| --------------------------- |
+| --- |
+| front-end | |
+| --- |
 | | Controllers |
-|back-end | ----------------- |
+| back-end | --- |
 | | Services | <= Divisão Lógica
 | | Interactions |
 | | BusinnessObjects |
-| | ----------------- |
+| | --- |
 | | Repositories |
 | | DAO's |
-| --------------------------- |
-|dados | |
-| --------------------------- |
+| --- |
+| dados | |
+| --- |
