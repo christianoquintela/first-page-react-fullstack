@@ -1,0 +1,10 @@
+.field-01, .field-02{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+
+}
+.radio-whats{
+    display: inline;
+}
