@@ -1,0 +1,23 @@
+.container {
+  width: 340px;
+  height: 260px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container-field {
+  width: 320px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+
+.img-login {
+  width: 75px;
+  margin: 10px auto;
+}

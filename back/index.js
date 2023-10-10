@@ -21,12 +21,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // app.post("/auth", h.auth.bind(h));
 // app.get("/hello", h.hello.bind(h));
 
-app.post("/cadastro", (req, res) => {
-  console.log(req.body);
-  //   console.log(req.body.nome);
-  //   console.log(req.body.cpf);
-  res.json(req.body);
-});
+// app.post("/cadastro", (req, res) => {
+//   console.log(req.body);
+//   //   console.log(req.body.nome);
+//   //   console.log(req.body.cpf);
+//   res.json(req.body);
+// });
+
+// app.post('/login',(req,res)=>{
+//   console.log(req.body);
+// })
 
 // Depois de dominar e entender como usar o express+cors praticar post/put/delete
 // app.post("/", function (req, res) {
