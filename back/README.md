@@ -3,7 +3,7 @@
 fs = file sistem
 
 |front-end| |
-|back-end | | Divisão Física
+|back-end | |
 |dados | |
 
 ## 2
@@ -22,3 +22,8 @@ fs = file sistem
 | --- |
 | dados | |
 | --- |
+
+| Syntax    | Description |
+| --------- | ----------- |
+| Header    | Title       |
+| Paragraph | Text        |
