@@ -4,19 +4,19 @@ fs = file sistem
 
 | Área      | Conteúdo | Divisão           |
 | --------- | -------- | ----------------- |
-| front-end |          |
-| back-end  |          | <= Divisão Física |
-| dados     |          |
+| Front-end |          |
+| Back-end  |          | <= Divisão Física |
+| Dados     |          |
 
 ## 2
 
 | Área      | Descrição               | Divisão           |
 | --------- | ----------------------- | ----------------- |
-| front-end | HTML, CSS, React        |
-| back-end  | {Controllers}           |
+| Front-end | HTML, CSS, React        |
+| --------- | {Controllers}           |
 | --------- | {Services               |
-| --------- | Interactions            | <= Divisão lógica |
+| Back-end  | Interactions            | <= Divisão lógica |
 | --------- | BusinnessObjects}       |
 | --------- | {Repositories           |
 | --------- | DAO's}                  |
-| dados     | SQL, mySQL, PostgresSQL |
+| Dados     | SQL, mySQL, PostgresSQL |
