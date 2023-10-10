@@ -13,10 +13,10 @@ fs = file sistem
 | Área      | Descrição               |
 | --------- | ----------------------- |
 | front-end | HTML, CSS, React        |
-| back-end  | Controllers             |
-| --------- | Services                |
+| back-end  | {Controllers}           |
+| --------- | {Services               |
 | --------- | Interactions            |
-| --------- | BusinnessObjects        |
-| --------- | Repositories            |
-| --------- | DAO's                   |
+| --------- | BusinnessObjects}       |
+| --------- | {Repositories           |
+| --------- | DAO's}                  |
 | dados     | SQL, mySQL, PostgresSQL |
