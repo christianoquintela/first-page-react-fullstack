@@ -9,29 +9,16 @@ fs = file sistem
 ## 2
 
 | --- |
-
 | front-end | |
-
 | --- |
-
 | | Controllers |
-
 | back-end | --- |
-
 | | Services | <= Divisão Lógica
-
 | | Interactions |
-
 | | BusinnessObjects |
-
 | | --- |
-
 | | Repositories |
-
 | | DAO's |
-
 | --- |
-
 | dados | |
-
 | --- |
