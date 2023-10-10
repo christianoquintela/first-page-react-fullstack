@@ -7,8 +7,6 @@ const io = require("./io/fs");
 const service = require("./service/service");
 const handlers = require("./handlers/user");
 
-const port = 8080;
-
 // 👇️ configure CORS
 app.use(cors());
 
@@ -18,7 +16,6 @@ let s = new service.Service(i);
 let h = new handlers.Routers(s);
 
 app.post("/auth", h.auth.bind(h));
-
 app.get("/hello", h.hello.bind(h));
 
 // Depois de dominar e entender como usar o express+cors praticar post/put/delete
@@ -32,9 +29,11 @@ app.get("/hello", h.hello.bind(h));
 //   res.send("Got a DELETE request at /user");
 // });
 
-app.listen(port, () => {
-  let data = new Date();
-  console.log(
-    "Servidor node iniciado em : " + data + "\nNa porta! " + port + "."
-  );
-});
+//Simplificando o listen...
+app.listen(8080);
+// app.listen(port, () => {
+//   let data = new Date();
+//   console.log(
+//     "Servidor node iniciado em : " + data + "\nNa porta! " + port + "."
+//   );
+// });
