@@ -1,17 +1,25 @@
-const express = require("express");
-const app = express();
-const port = 8080;
+//Camada que "consomem" os serviços.
+// na camada de serviços ficam as logicas de programação, classes, function e etc.
+const app = require("express")();
 const cors = require("cors");
+
+const io = require("./io/fs");
+const service = require("./service/service");
+const handlers = require("./handlers/user");
+
+const port = 8080;
+
 // 👇️ configure CORS
 app.use(cors());
 
-app.get("/", (req, res) => {
-  
-  res.json({
-    msg: "oi mundaum doido!",
+// padrão de injeção de dependências, clean architeture/hexagonal/onion architeture
+let i = new io.FS();
+let s = new service.Service(i);
+let h = new handlers.Routers(s);
 
-  });
-});
+app.post("/auth", h.auth.bind(h));
+
+app.get("/hello", h.hello.bind(h));
 
 // Depois de dominar e entender como usar o express+cors praticar post/put/delete
 // app.post("/", function (req, res) {
