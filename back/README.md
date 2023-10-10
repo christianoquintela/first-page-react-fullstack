@@ -13,7 +13,7 @@ fs = file sistem
 | --- |
 | | Controllers |
 | back-end | --- |
-| | Services | <= Divisão Lógica
+| | Services |
 | | Interactions |
 | | BusinnessObjects |
 | | --- |
