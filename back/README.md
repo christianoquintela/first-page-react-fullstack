@@ -3,19 +3,19 @@
 fs = file sistem
 
 | Área      | Conteúdo |
-| --------- | -------- |
+| --------- | -------- | ----------------- |
 | front-end |          |
-| back-end  |          |
+| back-end  |          | <= Divisão Física |
 | dados     |          |
 
 ## 2
 
 | Área      | Descrição               |
-| --------- | ----------------------- |
+| --------- | ----------------------- | ----------------- |
 | front-end | HTML, CSS, React        |
 | back-end  | {Controllers}           |
 | --------- | {Services               |
-| --------- | Interactions            |
+| --------- | Interactions            | <= Divisão lógica |
 | --------- | BusinnessObjects}       |
 | --------- | {Repositories           |
 | --------- | DAO's}                  |
