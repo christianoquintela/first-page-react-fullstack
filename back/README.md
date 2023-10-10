@@ -2,9 +2,11 @@
 
 fs = file sistem
 
-|front-end| |
-|back-end | |
-|dados | |
+| Área      | Conteúdo |
+| --------- | -------- |
+| front-end |          |
+| back-end  |          |
+| dados     |          |
 
 ## 2
 
@@ -17,5 +19,4 @@ fs = file sistem
 | --------- | BusinnessObjects        |
 | --------- | Repositories            |
 | --------- | DAO's                   |
-| --------- | ----------------------- |
 | dados     | SQL, mySQL, PostgresSQL |
