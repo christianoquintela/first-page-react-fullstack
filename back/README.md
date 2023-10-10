@@ -8,13 +8,14 @@ fs = file sistem
 
 ## 2
 
-| Área      | Descrição        |
-| --------- | ---------------- |
-| front-end | ---------------- |
-| back-end  | Controllers      |
-| --------- | Services         |
-| --------- | Interactions     |
-| --------- | BusinnessObjects |
-| --------- | Repositories     |
-| --------- | DAO's            |
-| dados     | ---------------- |
+| Área      | Descrição               |
+| --------- | ----------------------- |
+| front-end | HTML, CSS, React        |
+| back-end  | Controllers             |
+| --------- | Services                |
+| --------- | Interactions            |
+| --------- | BusinnessObjects        |
+| --------- | Repositories            |
+| --------- | DAO's                   |
+| --------- | ----------------------- |
+| dados     | SQL, mySQL, PostgresSQL |
