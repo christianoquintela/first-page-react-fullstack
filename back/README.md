@@ -2,7 +2,7 @@
 
 fs = file sistem
 
-| Área      | Conteúdo |
+| Área      | Conteúdo | Divisão           |
 | --------- | -------- | ----------------- |
 | front-end |          |
 | back-end  |          | <= Divisão Física |
@@ -10,7 +10,7 @@ fs = file sistem
 
 ## 2
 
-| Área      | Descrição               |
+| Área      | Descrição               | Divisão           |
 | --------- | ----------------------- | ----------------- |
 | front-end | HTML, CSS, React        |
 | back-end  | {Controllers}           |
