@@ -8,17 +8,13 @@ fs = file sistem
 
 ## 2
 
-| front-end | Description      |
+| Área | Descrição |
+| front-end | ---------------- |
 | --------- | ---------------- |
-| back-end  | Controllers      |
-| --------- | Services         |
-| --------- | Interactions     |
+| back-end | Controllers |
+| --------- | Services |
+| --------- | Interactions |
 | --------- | BusinnessObjects |
-| --------- | Repositories     |
-| --------- | DAO's            |
-| dados     | ---------------- |
-
-| Syntax    | Description |
-| --------- | ----------- |
-| Header    | Title       |
-| Paragraph | Text        |
+| --------- | Repositories |
+| --------- | DAO's |
+| dados | ---------------- |
