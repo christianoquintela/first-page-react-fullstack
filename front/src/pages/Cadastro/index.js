@@ -3,7 +3,7 @@ import "./style.css";
 
 function Cadastro() {
   return (
-    <div>
+    <div className="container-pai">
       <form action="http://localhost:8080/cadastro" method="POST">
         <fieldset className="field-01">
           <legend>Dados cadastrais</legend>

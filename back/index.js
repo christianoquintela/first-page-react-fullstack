@@ -32,6 +32,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //   console.log(req.body);
 // })
 
+app.post("/", (req, res) => {
+  console.log(req.body);
+  console.log(req.body.nome);
+  console.log(req.body.cpf);
+});
+
 // Depois de dominar e entender como usar o express+cors praticar post/put/delete
 // app.post("/", function (req, res) {
 //   res.send("Got a POST request");

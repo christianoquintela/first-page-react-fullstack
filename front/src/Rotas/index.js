@@ -17,5 +17,4 @@ function Rotas() {
     </section>
   );
 }
-
 export default Rotas;

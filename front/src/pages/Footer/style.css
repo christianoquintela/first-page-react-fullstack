@@ -1,4 +1,31 @@
-.pe{
-    background-color: black;
-    color: white;
+.pe {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container_div_img {
+  display: flex;
+
+  align-items: center;
+  gap: 15px;
+}
+
+.container_field_01,
+.container_field_02 {
+  width: 100%;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container_ul_pe {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 80%;
+  list-style: none;
+  font-size: 18px;
 }
