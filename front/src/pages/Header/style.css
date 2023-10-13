@@ -38,3 +38,9 @@
   border: 1px solid;
   border-radius: 50%;
 }
+.style_button:hover{
+background-color: black;
+color: #fff;
+
+
+}

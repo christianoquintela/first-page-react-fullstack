@@ -6,14 +6,15 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  flex-direction: column;
 }
 
 .container-field {
+  margin-top: 20rem;
   width: 320px;
-  height: 240px;
+  height: 280px;
   display: flex;
   flex-direction: column;
-
   box-sizing: border-box;
 }
 

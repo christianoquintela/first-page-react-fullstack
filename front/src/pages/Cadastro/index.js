@@ -4,7 +4,7 @@ import "./style.css";
 function Cadastro() {
   return (
     <div className="container-pai">
-      <form action="http://localhost:8080/cadastro" method="POST">
+      <form action="http://localhost:8080/cadastro" method="POST" className="form">
         <fieldset className="field-01">
           <legend>Dados cadastrais</legend>
           <label htmlFor="">Nome completo</label>
@@ -118,7 +118,7 @@ function Cadastro() {
           <label htmlFor="">Li e aceito os termos do contrato</label>
         </fieldset> 
 
-        <button type="submit">Cadastrar</button>
+        <button type="submit" className="btn_tela_cadastro">Cadastrar</button>
       </form>
     </div>
   );
