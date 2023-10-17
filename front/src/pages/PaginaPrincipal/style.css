@@ -1,12 +1,12 @@
 .container_main{
-    width: 1444px;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
     margin: 0 auto;
-    border: 4px solid;
-    padding: 10px;     
+    padding: 10px;   
 }
 
 .container_model{
-    width: 0 auto;
-    border: 3px solid;
+    width: 0 auto;    
     margin: 10px 0;
 }

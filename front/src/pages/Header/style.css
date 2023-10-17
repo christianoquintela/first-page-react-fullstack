@@ -1,15 +1,14 @@
 .topo {
-  width: 100%;  
+  
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  border: 3px solid;
+  align-items: center;  
   font-weight: bold;
-  margin: 0 auto;
+  
 }
 
 .container_ul_topo {
-  width: 580px;
+  
   height: 24px;
   display: flex;
   list-style: none;
