@@ -88,3 +88,5 @@ Adicionar as dependências ao projeto.
 Criar uma classe de conexão com o banco de dados.
 Atualizar a classe de serviço de autenticação para armazenar os usuários no banco de dados.
 
+Fé em Deus que tudo dará certo!
+
