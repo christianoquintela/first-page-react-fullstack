@@ -1,3 +1,6 @@
+
+// padrão REST: uso do protocolo HTTP, uso dos verbos HTTP, Formato de resposta JSON = java scrip object notation.
+
 class Routers {
   constructor(service) {
     this.service = service;
@@ -17,20 +20,19 @@ class Routers {
       msg: "oi",
     });
   }
+
+  cadastro(req, res) {
+   this.service.cadastro(req.body.nome,req.body.email,() => {
+
+     res.json({});
+   });
+  }
+
+  //==Fim da classe Routers
 }
 
 module.exports = {
   Routers,
 };
 
-// export class CLI {
-//   constructor(service) {
-//     this.service = service;
-//   }
 
-//   auth(args) {
-//     // ./app auth <email> pass
-//     token = this.service.auth(args[0], args[1]);
-//     print(token);
-//   }
-// }
