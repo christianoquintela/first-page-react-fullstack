@@ -2,15 +2,10 @@
 //Camada que "consomem" os serviços.
 // na camada de serviços ficam as logicas de programação, function e etc.
 //Bibliotecas
-import express from "express";
-import cors from "cors";
-import bodyParser from "body-parser";
+const express = require("express");
+const cors = require("cors");
+const bodyParser = require("body-parser");
 
-//Componentes / camadas / manipuladores
-import io from "./io/io";
-import service from "./service/service";
-import db from "./io/db";
-import handlers from "./handlers/user";
 
 //Uso dos imports
 const app = express();
@@ -19,21 +14,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// padrão de injeção de dependências, clean architeture/hexagonal/onion architeture
-let i = new io.IO(db.mysql());   //
-let s = new service.Service(i);
-let h = new handlers.Routers(s);
 
-
-app.post("/login", h.auth.bind(h));
-
-//=============
-app.get("/hello", h.hello.bind(h));
-
-//=============Chris que esta fazendo=====
-app.post("/cadastro", h.cadastro.bind(h));
-
-//========================================
 
 //Simplificando o listen...
 app.listen(8080);

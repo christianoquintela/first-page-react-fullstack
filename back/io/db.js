@@ -3,11 +3,11 @@
 
 // padrão REST: uso do protocolo HTTP, uso dos verbos HTTP, Formato de resposta JSON = java scrip object notation.
 
-import mysql from "mysql2";
+const mysql2 = require("mysql2");
 
 function mysql() {
   // create the connection to database
-  const db = mysql.createConnection({
+  const db = mysql2.createConnection({
     host: "localhost",
     user: "chris",
     password: "0329",
@@ -16,10 +16,10 @@ function mysql() {
   //Connection OK.
   db.connect((err) => {
     //Msg para informar que a conexão com o banco de dados foi realiza com sucesso.
-    console.log("conecção com o banco de dados realizada com sucesso!");
+    console.log("conexão com o banco de dados realizada com sucesso!");
   });
 
   return db;
 }
 
-export default mysql;
+module.exports = mysql;
