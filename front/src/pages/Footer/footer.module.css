@@ -4,14 +4,22 @@
   /* border: 3px solid; */
   font-size: 20px;
   font-weight: bold;
+
+  /* background-color: #3d3d3d; */
+  margin: .5rem;
+  border-radius: 10px;
+
+  box-shadow: 1px 1.5px 5px 2px #3d3d3d;
 }
 
 .container_div_img {
   display: flex;
-
   align-items: center;
   gap: 15px;
 }
+
+
+
 
 .container_field_01,
 .container_field_02 {
