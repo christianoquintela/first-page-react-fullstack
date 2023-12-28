@@ -1,6 +1,15 @@
-.logo70x7 h1{
+.logo70x7 {
+  width: 120px;
+  height: 60px;
   background-color: black;
-  color: white;
-  padding: 1.1rem;
   border-radius: 3rem;
+  text-align: center;
+  box-shadow: 2px 1px 6px #fff;
+  
+}
+
+.logo70x7 h1 {
+  line-height: 60px; 
+  font-weight: bolder;
+  color: white;
 }

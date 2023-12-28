@@ -1,8 +1,8 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import PaginaPrincipal from "../pages/PaginaPrincipal";
+import PaginaPrincipal from "../pages/PaginaPrincipal/paginaPrincipal";
 import Cadastro from "../pages/Cadastro";
-import Login from "../pages/Login/index";
+import Login from "../pages/Login/login";
 
 function Rotas() {
   return (

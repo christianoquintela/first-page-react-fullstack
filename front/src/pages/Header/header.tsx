@@ -12,12 +12,11 @@ function Header() {
     <header className={classes.topo}>
       <Logo70x7 />
       <ul className={classes.container_ul_topo}>
-        <li>Carreiras</li>
-        <li>Bootcamps</li>
+        <li>Carreira</li>
         <li>Projetos</li>
-        <li>Comunidade</li>
         <li>Planos</li>
-        <li>Para Empresas</li>
+        <li>Sobre</li>
+        <li>Contatos</li>
       </ul>
       <div className={classes.container_button}>
         <Link to='/login'>
