@@ -1,11 +1,29 @@
 //Components
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
-//Css
-import classes from './paginaPrincipal.module.css';
 import Card from '../../components/card/card';
 
+//Css
+import classes from './paginaPrincipal.module.css';
+
+//Axios, na pasta service com nome api
+import api from '../../service';
+
+//Function principal
 function PaginaPrincipal() {
+  const teste = async () => {
+    await api
+      .get('/')
+      .then(function (res) {
+        console.log(res);
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
+      .finally(function () {
+        console.log('funfou!');
+      });
+  };
   return (
     <body>
       <Header />
@@ -17,6 +35,7 @@ function PaginaPrincipal() {
           <Card />
           <Card />
           <Card />
+          <button onClick={teste}>Teste</button>
         </div>
       </main>
       <Footer />
