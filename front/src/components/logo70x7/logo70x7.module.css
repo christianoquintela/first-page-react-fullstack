@@ -5,11 +5,15 @@
   border-radius: 3rem;
   text-align: center;
   box-shadow: 2px 1px 6px #fff;
-  
+}
+.logo70x7:hover {
+  opacity: 0.8;
+  box-sizing: border-box;
+  border: 1px solid #fff;
 }
 
 .logo70x7 h1 {
-  line-height: 60px; 
+  line-height: 60px;
   font-weight: bolder;
   color: white;
 }

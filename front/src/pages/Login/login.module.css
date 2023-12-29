@@ -9,17 +9,32 @@
 }
 
 .container_field {
-  width: 320px;
+  text-align: center;
+  width: 340px;
   height: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 30px 0;
-  background-color: aqua;
+  gap: 8px;
+  background-color: beige;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.container_field input {
+  background: #3d3d3d;
+  color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+padding-left: 6px;
+  border-radius: 10px;
 }
 
 .img_login {
+  
   width: 75px;
   margin: 10px auto;
 }

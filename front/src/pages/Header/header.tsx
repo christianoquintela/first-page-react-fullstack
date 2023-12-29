@@ -10,7 +10,9 @@ import Logo70x7 from '../../components/logo70x7/logo70x7';
 function Header() {
   return (
     <header className={classes.topo}>
-      <Logo70x7 />
+      <Link to='/' style={{textDecoration: 'none'}}>
+        <Logo70x7 />
+      </Link>
       <ul className={classes.container_ul_topo}>
         <li>Carreira</li>
         <li>Projetos</li>
