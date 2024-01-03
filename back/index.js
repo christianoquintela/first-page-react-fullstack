@@ -19,14 +19,14 @@ app.get("/", function (req, res) {
 });
 
 //Simplificando o listen...
-app.listen(8080);
-// const/let port = 8080;
-// app.listen(port, () => {
-//   let data = new Date();
-//   console.log(
-//     "Servidor node iniciado em : " + data + "\nNa porta! " + port + "."
-//   );
-// });
+// app.listen(8080);
+const port = 8080;
+app.listen(port, () => {
+  let data = new Date();
+  console.log(
+    "Servidor node iniciado em : " + data + "\nNa porta! " + port + "."
+  );
+});
 
 
 // Depois de dominar e entender como usar o express+cors praticar get/post/put/delete
