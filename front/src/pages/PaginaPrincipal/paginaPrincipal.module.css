@@ -6,6 +6,13 @@
   /* background-color: aqua; */
 }
 
+.container_main h1{
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 30px;
+}
+
 .container_model {
   box-sizing: border-box;
   width: 80%;
@@ -22,4 +29,16 @@
 .container_model p,
 h2 {
   padding: 3px 0 0 10px;
+}
+
+.carrossel{
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
 }

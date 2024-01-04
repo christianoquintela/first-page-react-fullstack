@@ -5,17 +5,19 @@ type CardProps = {
   imgs?: string;
   descricao?: string;
   stack?: any[] | null;
+  link?: string;
 };
 
-const Card = ({ titulo, imgs, stack, descricao }: CardProps) => {
+const Card = ({ titulo, imgs, stack, descricao, link }: CardProps) => {
   return (
     <section className={classes.card}>
       <h1>{titulo}</h1>
       <div className={classes.container_img}>
-      <img src={imgs} alt={titulo} />
+        <img src={imgs} alt={titulo} />
       </div>
       <p>{descricao}</p>
       <ul>{stack}</ul>
+      <p>{link}</p>
     </section>
   );
 };

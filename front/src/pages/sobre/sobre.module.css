@@ -1,0 +1,29 @@
+.container_sobre{
+    height: 28rem;
+    width: 100%;
+    line-height: 50px;
+    padding-top: 30%;
+    
+}
+
+.container_sobre h1{
+    font-size: 3rem;
+    font-weight: 900;
+line-height: 70px;
+    text-shadow: 0 0 8px #3d3d3d;
+    color: #fff;
+
+    -webkit-text-stroke-width: .2px; /* largura da borda */
+    -webkit-text-stroke-color: #000;
+    
+}
+
+.container_sobre h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+}
+.container_sobre p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
