@@ -1,22 +1,102 @@
 // Camada REST => é a camada que recebe as requisições HTTP
 //Camada que "consomem" os serviços.
 // na camada de serviços ficam as logicas de programação, function e etc.
-//Bibliotecas
-const express = require("express");
-const cors = require("cors");
-const bodyParser = require("body-parser");
 
+//Banco de dados
+import connection from './inOut/db.js';
+
+//Bibliotecas
+import express from "express";
+import cors from "cors";
+import bodyParser from "body-parser";
 
 //Uso dos imports
 const app = express();
 // 👇️ configure CORS
 app.use(cors());
+app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/", function (req, res) {
-  res.json({ teste: "O baguio é doido!" });
+// Praticando Crud de tudo que eu fizer no portfólio.
+app.post("/", (req, res) => {
+  // console.log(JSON.parse(req.body));
+  const {
+    username,
+    email,
+    senha,
+    cpf,
+    telefone,
+    data: datas,
+    endereco,
+    nickname
+  } = req.body;
+
+  const sql = `insert into user(username, email, senha, cpf, telefone, endereco, nickname) values ?`;
+  let values = [[
+    username,
+    email,
+    senha,
+    cpf,
+    telefone,
+    endereco,
+    nickname
+  ]];
+
+  connection.query(sql, [values], (err, result) => {
+    if (err) { throw err };
+    console.log("Registro inserido com sucesso! ID: " + result.insertId);
+    console.log("Registro afetados: " + result.affectedRows)
+  })
 });
+
+app.put("/cadastro/:id", (req, res) => {
+  const {
+    username,
+    email,
+    senha,
+    cpf,
+    telefone,
+    data: datas,
+    endereco,
+    nickname
+  } = req.body;
+  const id = req.params.id
+
+  const sql = `update user set username = ?, email = ?, senha = ?, cpf = ?, telefone = ?, endereco = ?, nickname = ? where id = ?`;
+  let values = [[
+    username,
+    email,
+    senha,
+    cpf,
+    telefone,
+    endereco,
+    nickname,
+    id
+  ]];
+
+  connection.query(sql, [values], (err, result) => {
+    if (err) { return res.json((err)) } else { res.json(JSON.stringify(result)) }
+  })
+});
+
+app.get("/", (req, res) => {
+  connection.query('select * from user', (err, result, fields) => {
+    res.json(result);
+  })
+
+});
+
+app.delete("/:id", (req, res) => {
+  const id = req.params.id;
+  console.log('id que será deletado: ' + id);
+
+  connection.query('delete from user where id = ?', [id], (err, result, fields) => {
+    console.error(err)
+    console.log(result)
+  })
+})
+
 
 //Simplificando o listen...
 // app.listen(8080);

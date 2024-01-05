@@ -13,57 +13,51 @@ import github from '../../assets/github_72px.png';
 function Contatos() {
   return (
     <section className={classes.contatos}>
-      {/* <div>
-            <Link to='/'>
-              <Logo70x7 />
-              <p>Home</p>
-            </Link>
-          </div> */}
-          <h1>Contatos</h1>
 
-          <section className={classes.section}>
+      <h1>Contatos</h1>
 
-      <div className={classes.link_externo}>
-        <a
-          href='http://linkedin.com/in/christianoquintela'
-          target='_blank'
-          rel='noreferrer'
-        >
-          <img src={linkedin} alt='logo Linkedin' />
-          <p>LinkedIn</p>
-        </a>
-      </div>
+      <section className={classes.section}>
+        <div className={classes.link_externo}>
+          <a
+            href='http://linkedin.com/in/christianoquintela'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <img src={linkedin} alt='logo Linkedin' />
+            <p>LinkedIn</p>
+          </a>
+        </div>
 
-      <div className={classes.link_externo}>
-        <a href='http://facebook.com'>
-          <img src={facebook} alt='logo facebook' /> <p>Facebook</p>
-        </a>
-      </div>
-      <div className={classes.link_externo}>
-        <a href='http://youtube.com'>
-          <img src={youtube} alt='logo youtube' />
-          <p>Youtube</p>
-        </a>
-      </div>
-      <div className={classes.link_externo}>
-        <a href='http://twitter.com'>
-          <img src={twitter} alt='logo twitter' />
-          <p>Twitter</p>
-        </a>
-      </div>
-      <div className={classes.link_externo}>
-        <a href='http://instagram.com'>
-          <img src={instagram} alt='logo instagram' />
-          <p>Instagram</p>
-        </a>
-      </div>
-      <div className={classes.link_externo}>
-        <a href='http://github.com/christianoquintela'>
-          <img src={github} alt='logo instagram' />
-          <p>Github</p>
-        </a>
-      </div>
-          </section>
+        <div className={classes.link_externo}>
+          <a href='http://facebook.com'>
+            <img src={facebook} alt='logo facebook' /> <p>Facebook</p>
+          </a>
+        </div>
+        <div className={classes.link_externo}>
+          <a href='http://youtube.com'>
+            <img src={youtube} alt='logo youtube' />
+            <p>Youtube</p>
+          </a>
+        </div>
+        <div className={classes.link_externo}>
+          <a href='http://twitter.com'>
+            <img src={twitter} alt='logo twitter' />
+            <p>Twitter</p>
+          </a>
+        </div>
+        <div className={classes.link_externo}>
+          <a href='http://instagram.com'>
+            <img src={instagram} alt='logo instagram' />
+            <p>Instagram</p>
+          </a>
+        </div>
+        <div className={classes.link_externo}>
+          <a href='http://github.com/christianoquintela'>
+            <img src={github} alt='logo instagram' />
+            <p>Github</p>
+          </a>
+        </div>
+      </section>
     </section>
   );
 }

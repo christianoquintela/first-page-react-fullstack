@@ -1,17 +1,14 @@
 /* >>>>>>>>>> Container Contatos */
 .contatos {
   width: 100%;
+  max-width: 1440px;
   height: 22rem;  
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
-  /* border: 3px solid; */
   /* background-color: #3d3d3d; */
-  margin: 0.5rem;
-  /* border-radius: 10px 10px 0 0; */
-  /* box-shadow: 1px 1.5px 5px 2px #3d3d3d; */
+  margin: 0.5rem auto;
 }
 
 .contatos h1{
@@ -28,6 +25,7 @@
   height: 100px;
   width: 100%;
   display: flex;
+  justify-content: center;
   
 }
 

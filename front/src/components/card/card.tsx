@@ -4,7 +4,7 @@ type CardProps = {
   titulo?: string;
   imgs?: string;
   descricao?: string;
-  stack?: any[] | null;
+  stack?: string;
   link?: string;
 };
 
