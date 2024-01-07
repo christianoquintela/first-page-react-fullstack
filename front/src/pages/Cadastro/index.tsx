@@ -14,7 +14,7 @@ function Cadastro() {
   const [datas, setData] = useState('');
   const [enderecos, setEndereco] = useState('');
   const [nicknames, setNickname] = useState('');
-console.log(id);
+  console.log(id);
   // console.log(id, nome, email, password, cpf, tel, datas, enderecos, nicknames);
   //Insert / post
   const post = async () => {
@@ -71,6 +71,17 @@ console.log(id);
   };
   //Buscar / Get
 
+  const pegar = async () => {
+    await api
+      .get('/')
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((erro) => {
+        console.log(erro);
+      });
+  };
+
   return (
     <div>
       <div className={classes.container}>
@@ -123,6 +134,7 @@ console.log(id);
         <button onClick={post}>Insert</button>
         <button onClick={put}>Update</button>
         <button onClick={deleta}>Delete</button>
+        <button onClick={pegar}>Pegar</button>
       </div>
     </div>
   );

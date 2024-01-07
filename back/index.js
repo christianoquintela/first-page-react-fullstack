@@ -50,7 +50,7 @@ app.post("/", (req, res) => {
   })
 });
 
-app.put("/cadastro/:id", (req, res) => {
+app.put("/:id", (req, res) => {
   const {
     username,
     email,
@@ -97,6 +97,13 @@ app.delete("/:id", (req, res) => {
   })
 })
 
+app.use(function (request, response) {
+  response.status(404).send("400 Not Found! Page does not exist...");
+});
+app.use(function (request, response, error) {
+  console.log(error.stack);
+  response.status(500).send("500 Something is broken!");
+});
 
 //Simplificando o listen...
 // app.listen(8080);
